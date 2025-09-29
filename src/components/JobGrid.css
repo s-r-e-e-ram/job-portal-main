@@ -1,0 +1,36 @@
+
+.job-grid-section .container {
+  margin: 0 auto;
+  padding: 0rem 2rem 2rem;
+  max-width: 1400px;
+}
+
+/* .job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+} */
+ .job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.no-job-found{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.no-job-found .clear-filter{
+  color: blue;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+}
