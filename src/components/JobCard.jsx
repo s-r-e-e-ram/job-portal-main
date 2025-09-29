@@ -111,6 +111,7 @@ const JobCard = ({ job }) => {
 
   return (
     <div className="job-card">
+      <div>
       <div className="job-card-header">
         <div className="company-logo-container">{getCompanyLogo(job.logo)}</div>
         <div className="posted-time">{job.postedTime}</div>
@@ -143,6 +144,7 @@ const JobCard = ({ job }) => {
             <span>{desc}</span>
           </div>
         ))}
+      </div>
       </div>
 
       <button className="apply-btn">Apply Now</button>
